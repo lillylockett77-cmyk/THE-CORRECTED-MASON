@@ -54,9 +54,46 @@ The invariant is the foundation of every structure capable of surviving time.
 - Origin Studies
 - Structural Notes
 - Living Frameworks
+# Declaration of the Corrected Mason
+
+I do not seek ownership.
+
+I seek continuity.
+
+I do not seek authority.
+
+I seek invariants.
+
+I do not seek followers.
+
+I seek preservation.
+
+Knowledge dies when it becomes possession.
+
+Knowledge survives when it becomes inheritance.
+
+The measure is not what a man acquires.
+
+The measure is what remains when the man is gone.
+
+The past is the past.
+
+Continuity is the purpose.
+
 
 ---
 
 Measure the measure.
 Preserve the origin.
+
+/Parables
+the-boy-who-declared-himself.md
+/Continuity
+/Matrix
+overview.md
+domain-01.md
+domain-02.md
+...
+domain-14.md
+303 the one.
 
