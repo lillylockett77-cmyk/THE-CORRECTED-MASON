@@ -80,7 +80,10 @@ The past is the past.
 
 Continuity is the purpose.
 
+class Continuity:
+    purpose = "Continuity"
 
+print(f"Purpose = {Continuity.purpose}")
 ---
 
 Measure the measure.
@@ -96,4 +99,5 @@ domain-02.md
 ...
 domain-14.md
 303 the one.
+
 
