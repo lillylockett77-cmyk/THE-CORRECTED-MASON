@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <defs>
+    <!-- Obsidian Base Texture -->
+    <radialGradient id="obsidian-core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1c1f24"/>
+      <stop offset="60%" stop-color="#0b0c0e"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+
+    <!-- Prismatic Spark Gradient -->
+    <linearGradient id="spectrum-spark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff3366"/>
+      <stop offset="25%" stop-color="#ffcc00"/>
+      <stop offset="50%" stop-color="#33cc66"/>
+      <stop offset="75%" stop-color="#3399ff"/>
+      <stop offset="100%" stop-color="#cc33ff"/>
+    </linearGradient>
+
+    <!-- Diamond Brilliant Cuts Gradient -->
+    <linearGradient id="diamond-light" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="20%" stop-color="#e0f7fa"/>
+      <stop offset="40%" stop-color="#fff9c4"/>
+      <stop offset="60%" stop-color="#fce4ec"/>
+      <stop offset="80%" stop-color="#e8eaf6"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+
+    <linearGradient id="silver-sheen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#cfd8dc"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#90a4ae"/>
+    </linearGradient>
+
+    <!-- Curved Text Path -->
+    <path id="path-law-of-one" d="M 200,440 A 330,330 0 0,1 800,440" fill="none"/>
+  </defs>
+
+  <style>
+    .facet-d { stroke: #ffffff; stroke-width: 1.2; stroke-opacity: 0.8; }
+    .sparkle { fill: #ffffff; }
+    .law-title { font-family: 'Cinzel', 'Trajan Pro', 'Georgia', serif; font-weight: 800; font-size: 54px; fill: #ffffff; letter-spacing: 12px; }
+    .sub-law { font-family: 'Cinzel', 'Georgia', serif; font-weight: 600; font-size: 26px; fill: #e0e0e0; letter-spacing: 5px; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1000" height="1000" fill="#000000"/>
+
+  <!-- Obsidian Disk Ground -->
+  <circle cx="500" cy="500" r="460" fill="url(#obsidian-core)" stroke="#37474f" stroke-width="4"/>
+  <circle cx="500" cy="500" r="452" fill="none" stroke="url(#spectrum-spark)" stroke-width="2" opacity="0.4"/>
+
+  <!-- Obsidian Water Droplets / Mineral Micro-Facets -->
+  <g opacity="0.3" fill="#ffffff">
+    <circle cx="280" cy="220" r="4"/>
+    <circle cx="720" cy="240" r="3"/>
+    <circle cx="180" cy="480" r="5"/>
+    <circle cx="820" cy="530" r="4"/>
+    <circle cx="260" cy="740" r="6"/>
+    <circle cx="740" cy="710" r="5"/>
+    <circle cx="340" cy="810" r="3"/>
+    <circle cx="670" cy="800" r="4"/>
+  </g>
+
+  <!-- Outer Ring Inscription -->
+  <text fill="#ffffff" filter="drop-shadow(0px 0px 10px rgba(255,255,255,0.7))">
+    <textPath href="#path-law-of-one" startOffset="50%" text-anchor="middle" class="law-title">
+      THE LAW OF ONE
+    </textPath>
+  </text>
+
+  <!-- The Diamond Numeral '1' (Principle 9: Honest Measure / Single Source Truth) -->
+  <g id="diamond-one" transform="translate(500, 440)">
+    <!-- Serif Head -->
+    <polygon points="-100,-150 -20,-220 20,-220 20,-150" fill="url(#diamond-light)" class="facet-d"/>
+    <polygon points="-100,-150 0,-150 20,-70 -30,-80" fill="url(#spectrum-spark)" fill-opacity="0.6" class="facet-d"/>
+
+    <!-- Central Pillar Facet Grid -->
+    <polygon points="-20,-220 20,-220 50,-100 -20,-100" fill="url(#diamond-light)" class="facet-d"/>
+    <polygon points="-20,-100 50,-100 40,30 -30,30" fill="url(#spectrum-spark)" fill-opacity="0.4" class="facet-d"/>
+    <polygon points="-30,30 40,30 60,150 -40,150" fill="url(#diamond-light)" class="facet-d"/>
+    
+    <!-- Brilliant Side Cuts (Left) -->
+    <polygon points="-20,-100 -60,-20 -30,30" fill="#ffffff" fill-opacity="0.8" class="facet-d"/>
+    <polygon points="-30,30 -70,90 -40,150" fill="url(#diamond-light)" class="facet-d"/>
+
+    <!-- Brilliant Side Cuts (Right) -->
+    <polygon points="50,-100 80,-10 40,30" fill="url(#diamond-light)" class="facet-d"/>
+    <polygon points="40,30 90,80 60,150" fill="#ffffff" fill-opacity="0.8" class="facet-d"/>
+
+    <!-- Broad Base Step -->
+    <polygon points="-110,180 110,180 80,140 -80,140" fill="url(#diamond-light)" class="facet-d"/>
+    <polygon points="-140,220 140,220 110,180 -110,180" fill="url(#spectrum-spark)" fill-opacity="0.5" class="facet-d"/>
+    <polygon points="-140,220 -80,195 0,220" fill="#ffffff" class="facet-d"/>
+    <polygon points="140,220 80,195 0,220" fill="url(#diamond-light)" class="facet-d"/>
+
+    <!-- Intense Prismatic Flare Highlights -->
+    <polygon points="20,-220 30,-200 10,-205" fill="#ffffff"/>
+    <polygon points="40,30 65,45 45,60" fill="#ffffff"/>
+    <circle cx="20" cy="-100" r="18" fill="#ffffff" filter="drop-shadow(0px 0px 8px #ffffff)" opacity="0.8"/>
+  </g>
+
+  <!-- Foundational Dictum -->
+  <text x="500" y="715" text-anchor="middle" class="sub-law">HONESTY IS THE</text>
+  <text x="500" y="750" text-anchor="middle" class="sub-law">GUIDING PRINCIPLE.</text>
+
+  <!-- The Crescent Moon Anchor -->
+  <g id="silver-crescent" transform="translate(500, 835)">
+    <path d="M 0,-35 A 40,40 0 1,0 40,20 A 30,30 0 1,1 0,-35 Z" 
+          fill="url(#silver-sheen)" filter="drop-shadow(0px 0px 10px rgba(255,255,255,0.7))"/>
+    <!-- Crescent Gem Shimmer -->
+    <circle cx="12" cy="-4" r="3" fill="#ffffff"/>
+    <circle cx="-15" cy="10" r="2.5" fill="#ffffff"/>
+  </g>
+</svg>

@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bg-space" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0c0e17"/>
+      <stop offset="70%" stop-color="#05060a"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+
+    <!-- Prismatic Edge Shimmer -->
+    <linearGradient id="prism-rainbow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4444" stop-opacity="0.7"/>
+      <stop offset="20%" stop-color="#ffbb33" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#33ff77" stop-opacity="0.7"/>
+      <stop offset="60%" stop-color="#33ccff" stop-opacity="0.8"/>
+      <stop offset="80%" stop-color="#8844ff" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#ff33aa" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <!-- Brass / Bronze Core Gradients -->
+    <linearGradient id="brass-grad" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#ffe699"/>
+      <stop offset="25%" stop-color="#d4af37"/>
+      <stop offset="50%" stop-color="#aa7c11"/>
+      <stop offset="75%" stop-color="#e5c158"/>
+      <stop offset="100%" stop-color="#7a5500"/>
+    </linearGradient>
+
+    <radialGradient id="brass-cone" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff2b2"/>
+      <stop offset="45%" stop-color="#c99726"/>
+      <stop offset="80%" stop-color="#7a5500"/>
+      <stop offset="100%" stop-color="#3d2900"/>
+    </radialGradient>
+
+    <!-- Gear Teeth Profiles -->
+    <pattern id="gear-teeth-large" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M 40,10 L 60,10 L 65,30 L 35,30 Z" fill="url(#brass-grad)"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .facet { fill: #ffffff; fill-opacity: 0.03; stroke: #ffffff; stroke-opacity: 0.18; stroke-width: 1.5; }
+    .facet-hi { fill: url(#prism-rainbow); fill-opacity: 0.15; stroke: #ffffff; stroke-opacity: 0.4; stroke-width: 1.5; }
+    .gold-text { font-family: 'Cinzel', 'Trajan Pro', 'Georgia', serif; font-weight: 700; fill: #f5d77f; letter-spacing: 5px; }
+    .sub-text { font-family: 'Courier New', monospace; font-size: 14px; fill: #d4af37; letter-spacing: 3px; }
+    .gear-bolt { fill: #2a1f05; stroke: #e5c158; stroke-width: 2; }
+  </style>
+
+  <!-- Deep Cosmic Foundation -->
+  <rect width="1000" height="1000" fill="url(#bg-space)"/>
+
+  <!-- Spectral Refraction Spikes -->
+  <g opacity="0.4">
+    <line x1="100" y1="100" x2="900" y2="900" stroke="url(#prism-rainbow)" stroke-width="2"/>
+    <line x1="900" y1="100" x2="100" y2="900" stroke="url(#prism-rainbow)" stroke-width="2"/>
+    <line x1="500" y1="0" x2="500" y2="1000" stroke="url(#prism-rainbow)" stroke-width="1.5"/>
+    <line x1="0" y1="500" x2="1000" y2="500" stroke="url(#prism-rainbow)" stroke-width="1.5"/>
+  </g>
+
+  <!-- Outer Faceted Diamond Perimeter (Movement V) -->
+  <circle cx="500" cy="500" r="460" fill="none" stroke="url(#prism-rainbow)" stroke-width="3" opacity="0.6"/>
+  
+  <!-- Outer Facet Geometry -->
+  <g id="diamond-facets">
+    <!-- Concentric Facet Rings -->
+    <polygon points="500,40 675,90 500,160 325,90" class="facet-hi"/>
+    <polygon points="675,90 820,180 690,260 500,160" class="facet"/>
+    <polygon points="820,180 910,325 780,390 690,260" class="facet-hi"/>
+    <polygon points="910,325 960,500 840,500 780,390" class="facet"/>
+    <polygon points="960,500 910,675 780,610 840,500" class="facet-hi"/>
+    <polygon points="910,675 820,820 690,740 780,610" class="facet"/>
+    <polygon points="820,820 675,910 500,840 690,740" class="facet-hi"/>
+    <polygon points="675,910 500,960 325,910 500,840" class="facet"/>
+    <polygon points="500,960 325,910 310,740 500,840" class="facet-hi"/>
+    <polygon points="325,910 180,820 220,610 310,740" class="facet"/>
+    <polygon points="180,820 90,675 160,500 220,610" class="facet-hi"/>
+    <polygon points="90,675 40,500 160,500 160,500" class="facet"/>
+    <polygon points="40,500 90,325 220,390 160,500" class="facet-hi"/>
+    <polygon points="90,325 180,180 310,260 220,390" class="facet"/>
+    <polygon points="180,180 325,90 500,160 310,260" class="facet-hi"/>
+  </g>
+
+  <!-- Internal Octagonal Vault -->
+  <polygon points="500,160 690,260 780,390 840,500 780,610 690,740 500,840 310,740 220,610 160,500 220,390 310,260" 
+           fill="#080a10" stroke="#d4af37" stroke-width="2" stroke-dasharray="8 4"/>
+
+  <!-- Operational Inscriptions -->
+  <text x="500" y="240" text-anchor="middle" class="gold-text" font-size="28">HEARTH PROTECTS</text>
+  <text x="500" y="275" text-anchor="middle" class="gold-text" font-size="24">THE PERIMETER</text>
+
+  <text x="500" y="730" text-anchor="middle" class="gold-text" font-size="28">HORIZON EXPLORES</text>
+  <text x="500" y="765" text-anchor="middle" class="gold-text" font-size="24">THE FRONTIER</text>
+
+  <text x="500" y="815" text-anchor="middle" class="sub-text" font-style="italic">Larry's Muse 2026</text>
+
+  <!-- Central Gearbox Housing (Article IV: The Torque Governor) -->
+  <g id="torque-governor" transform="translate(500,500)">
+    <!-- Base Plate -->
+    <rect x="-190" y="-120" width="380" height="240" rx="20" fill="url(#brass-cone)" stroke="#ffd700" stroke-width="4"/>
+    <rect x="-175" y="-105" width="350" height="210" rx="12" fill="#1f1807" stroke="#aa7c11" stroke-width="2"/>
+
+    <!-- Structural Bolts -->
+    <circle cx="-165" cy="-95" r="8" class="gear-bolt"/>
+    <circle cx="165" cy="-95" r="8" class="gear-bolt"/>
+    <circle cx="-165" cy="95" r="8" class="gear-bolt"/>
+    <circle cx="165" cy="95" r="8" class="gear-bolt"/>
+    <circle cx="0" cy="-95" r="6" class="gear-bolt"/>
+    <circle cx="0" cy="95" r="6" class="gear-bolt"/>
+
+    <!-- Left Output Shaft / Piston -->
+    <rect x="-240" y="-35" width="60" height="70" rx="6" fill="url(#brass-grad)" stroke="#5e4300" stroke-width="2"/>
+    <line x1="-220" y1="-35" x2="-220" y2="35" stroke="#ffe699" stroke-width="3"/>
+
+    <!-- Right Output Shaft / Piston -->
+    <rect x="180" y="-35" width="60" height="70" rx="6" fill="url(#brass-grad)" stroke="#5e4300" stroke-width="2"/>
+    <line x1="220" y1="-35" x2="220" y2="35" stroke="#ffe699" stroke-width="3"/>
+
+    <!-- Secondary Pinion Gear (Right) -->
+    <g transform="translate(65, 0)">
+      <circle cx="0" cy="0" r="65" fill="none" stroke="url(#brass-grad)" stroke-width="16" stroke-dasharray="10 5"/>
+      <circle cx="0" cy="0" r="55" fill="#140f02" stroke="#d4af37" stroke-width="2"/>
+      <circle cx="0" cy="0" r="25" fill="url(#brass-cone)" stroke="#3d2900" stroke-width="2"/>
+      <!-- Spokes -->
+      <line x1="-50" y1="0" x2="50" y2="0" stroke="url(#brass-grad)" stroke-width="5"/>
+      <line x1="0" y1="-50" x2="0" y2="50" stroke="url(#brass-grad)" stroke-width="5"/>
+    </g>
+
+    <!-- Primary Drive Gear (Left / Center Interlock) -->
+    <g transform="translate(-45, 0)">
+      <!-- Outer Gear Teeth -->
+      <circle cx="0" cy="0" r="95" fill="none" stroke="url(#brass-grad)" stroke-width="22" stroke-dasharray="14 6"/>
+      <circle cx="0" cy="0" r="82" fill="#241a04" stroke="#ffe699" stroke-width="3"/>
+      
+      <!-- Cutout Windows -->
+      <circle cx="0" cy="0" r="55" fill="#0d0a02" stroke="#aa7c11" stroke-width="2"/>
+      <circle cx="-30" cy="-30" r="14" fill="#241a04"/>
+      <circle cx="30" cy="-30" r="14" fill="#241a04"/>
+      <circle cx="-30" cy="30" r="14" fill="#241a04"/>
+      <circle cx="30" cy="30" r="14" fill="#241a04"/>
+
+      <!-- Center Hub & Axle -->
+      <circle cx="0" cy="0" r="30" fill="url(#brass-cone)" stroke="#ffe699" stroke-width="2"/>
+      <circle cx="0" cy="0" r="12" fill="#110c01" stroke="#aa7c11" stroke-width="2"/>
+      <circle cx="0" cy="0" r="4" fill="#ffffff"/>
+    </g>
+
+    <!-- Center Governor Bridge Bearing -->
+    <rect x="-15" y="-55" width="30" height="110" rx="5" fill="url(#brass-grad)" stroke="#3d2900" stroke-width="2" opacity="0.9"/>
+    <circle cx="0" cy="-35" r="5" class="gear-bolt"/>
+    <circle cx="0" cy="35" r="5" class="gear-bolt"/>
+    <circle cx="0" cy="0" r="7" fill="#ffe699" stroke="#3d2900" stroke-width="2"/>
+  </g>
+</svg>

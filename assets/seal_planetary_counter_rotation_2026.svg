@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <defs>
+    <!-- Background Space -->
+    <radialGradient id="space-void" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0a0d1a"/>
+      <stop offset="80%" stop-color="#020307"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+
+    <!-- Prismatic Rainbow Trim -->
+    <linearGradient id="spectrum-ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff3b30"/>
+      <stop offset="20%" stop-color="#ff9500"/>
+      <stop offset="40%" stop-color="#4cd964"/>
+      <stop offset="60%" stop-color="#5ac8fa"/>
+      <stop offset="80%" stop-color="#5856d6"/>
+      <stop offset="100%" stop-color="#ff2d55"/>
+    </linearGradient>
+
+    <!-- Hearth Metal: Copper / Bronze -->
+    <linearGradient id="hearth-metal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e89d67"/>
+      <stop offset="35%" stop-color="#b86932"/>
+      <stop offset="70%" stop-color="#7a3a14"/>
+      <stop offset="100%" stop-color="#421a04"/>
+    </linearGradient>
+
+    <!-- Horizon Metal: Hard Electric Steel / Cyan -->
+    <linearGradient id="horizon-metal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b2ebf2"/>
+      <stop offset="35%" stop-color="#4dd0e1"/>
+      <stop offset="70%" stop-color="#00838f"/>
+      <stop offset="100%" stop-color="#00363a"/>
+    </linearGradient>
+
+    <!-- Earth Atmosphere & Land Gradients -->
+    <radialGradient id="earth-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="75%" stop-color="#0d47a1" stop-opacity="0"/>
+      <stop offset="95%" stop-color="#42a5f5" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#80d8ff" stop-opacity="0.9"/>
+    </radialGradient>
+
+    <radialGradient id="ocean-sphere" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#1e88e5"/>
+      <stop offset="60%" stop-color="#1565c0"/>
+      <stop offset="100%" stop-color="#0d274d"/>
+    </radialGradient>
+
+    <!-- Text Curved Paths -->
+    <path id="text-path-top" d="M 175,500 A 325,325 0 0,1 825,500" fill="none"/>
+    <path id="text-path-hearth" d="M 270,500 A 230,230 0 0,1 500,270" fill="none"/>
+    <path id="text-path-horizon" d="M 500,270 A 230,230 0 0,1 730,500" fill="none"/>
+  </defs>
+
+  <style>
+    .facet-border { fill: #ffffff; fill-opacity: 0.02; stroke: #ffffff; stroke-opacity: 0.22; stroke-width: 1.5; }
+    .facet-rainbow { fill: url(#spectrum-ring); fill-opacity: 0.12; stroke: #ffffff; stroke-opacity: 0.35; }
+    .sovereign-title { font-family: 'Cinzel', 'Trajan Pro', 'Georgia', serif; font-weight: 800; font-size: 42px; fill: #ffffff; letter-spacing: 12px; }
+    .ledger-label { font-family: 'Cinzel', 'Trajan Pro', serif; font-weight: 700; font-size: 26px; letter-spacing: 8px; }
+  </style>
+
+  <!-- Canvas Base -->
+  <rect width="1000" height="1000" fill="url(#space-void)"/>
+
+  <!-- Diamond Perimeter Ring (Prismatic Outer Border) -->
+  <circle cx="500" cy="500" r="475" fill="none" stroke="url(#spectrum-ring)" stroke-width="4" opacity="0.8"/>
+  
+  <!-- Outer Facet Shell -->
+  <g>
+    <polygon points="500,25 615,80 500,140 385,80" class="facet-rainbow"/>
+    <polygon points="615,80 740,135 640,215 500,140" class="facet-border"/>
+    <polygon points="740,135 845,230 755,320 640,215" class="facet-rainbow"/>
+    <polygon points="845,230 925,355 815,420 755,320" class="facet-border"/>
+    <polygon points="925,355 975,500 850,500 815,420" class="facet-rainbow"/>
+    <polygon points="975,500 925,645 815,580 850,500" class="facet-border"/>
+    <polygon points="925,645 845,770 755,680 815,580" class="facet-rainbow"/>
+    <polygon points="845,770 740,865 640,785 755,680" class="facet-border"/>
+    <polygon points="740,865 615,920 500,860 640,785" class="facet-rainbow"/>
+    <polygon points="615,920 500,975 385,920 500,860" class="facet-border"/>
+    <polygon points="500,975 385,920 360,785 500,860" class="facet-rainbow"/>
+    <polygon points="385,920 260,865 245,680 360,785" class="facet-border"/>
+    <polygon points="260,865 155,770 185,580 245,680" class="facet-rainbow"/>
+    <polygon points="155,770 75,645 150,500 185,580" class="facet-border"/>
+    <polygon points="75,645 25,500 150,500 150,500" class="facet-rainbow"/>
+    <polygon points="25,500 75,355 185,420 150,500" class="facet-border"/>
+    <polygon points="75,355 155,230 245,320 185,420" class="facet-rainbow"/>
+    <polygon points="155,230 260,135 360,215 245,320" class="facet-border"/>
+    <polygon points="260,135 385,80 500,140 360,215" class="facet-rainbow"/>
+  </g>
+
+  <!-- Constitutional Arch Inscription -->
+  <text fill="#ffffff" filter="drop-shadow(0px 2px 8px rgba(255,255,255,0.4))">
+    <textPath href="#text-path-top" startOffset="50%" text-anchor="middle" class="sovereign-title">
+      UNITED SOVEREIGNS OF EARTH
+    </textPath>
+  </text>
+
+  <!-- 2026 Datum Meridian -->
+  <text x="500" y="835" text-anchor="middle" font-family="'Cinzel', serif" font-size="28" font-weight="700" fill="#ffffff" letter-spacing="4">2026</text>
+  <text x="500" y="855" text-anchor="middle" font-family="'Cinzel', serif" font-size="18" fill="#80d8ff" opacity="0.6">ZOZ6</text>
+
+  <!-- Counter-Rotating Crown Ring Mechanism -->
+  <!-- Hearth Outer Gear Segment (Left / Copper) -->
+  <path d="M 500,180 A 320,320 0 0,0 500,820 L 500,740 A 240,240 0 0,1 500,260 Z" 
+        fill="url(#hearth-metal)" stroke="#ffb380" stroke-width="2"/>
+  <!-- Hearth Outer Teeth -->
+  <path d="M 500,180 A 320,320 0 0,0 500,820" fill="none" stroke="url(#hearth-metal)" stroke-width="28" stroke-dasharray="24 16"/>
+
+  <!-- Horizon Outer Gear Segment (Right / Cyan Steel) -->
+  <path d="M 500,180 A 320,320 0 0,1 500,820 L 500,740 A 240,240 0 0,0 500,260 Z" 
+        fill="url(#horizon-metal)" stroke="#80deea" stroke-width="2"/>
+  <!-- Horizon Outer Teeth -->
+  <path d="M 500,180 A 320,320 0 0,1 500,820" fill="none" stroke="url(#horizon-metal)" stroke-width="28" stroke-dasharray="24 16"/>
+
+  <!-- Ledger Identification Text -->
+  <text fill="#ffd9b3">
+    <textPath href="#text-path-hearth" startOffset="50%" text-anchor="middle" class="ledger-label">
+      HEARTH
+    </textPath>
+  </text>
+  <text fill="#e0f7fa">
+    <textPath href="#text-path-horizon" startOffset="50%" text-anchor="middle" class="ledger-label">
+      HORIZON
+    </textPath>
+  </text>
+
+  <!-- Counter-Rotation Direction Indicators -->
+  <polygon points="492,205 465,190 492,175" fill="#ffe0b2"/>
+  <polygon points="508,205 535,220 508,235" fill="#b2ebf2"/>
+  <polygon points="492,795 465,810 492,825" fill="#ffe0b2"/>
+  <polygon points="508,795 535,780 508,765" fill="#b2ebf2"/>
+
+  <!-- Central Living Core (Movement VIII: Keeping of Earth) -->
+  <g id="planetary-core">
+    <!-- Deep Ocean Sphere -->
+    <circle cx="500" cy="500" r="190" fill="url(#ocean-sphere)"/>
+    
+    <!-- Vector Continents / Biosphere Masses -->
+    <path d="M 440,360 Q 470,340 510,350 Q 530,370 540,410 Q 510,430 480,420 Q 430,410 440,360 Z" 
+          fill="#4caf50" opacity="0.85"/>
+    <path d="M 470,440 Q 520,430 550,470 Q 530,530 490,560 Q 460,530 470,440 Z" 
+          fill="#66bb6a" opacity="0.85"/>
+    <path d="M 370,400 Q 410,380 420,420 Q 390,460 360,440 Z" 
+          fill="#388e3c" opacity="0.8"/>
+    <path d="M 530,490 Q 610,460 620,530 Q 580,590 540,540 Z" 
+          fill="#81c784" opacity="0.85"/>
+
+    <!-- Cloud Formations & Atmospheric Swirls -->
+    <path d="M 340,460 Q 420,440 480,480 Q 560,490 640,430 Q 580,410 500,430 Q 410,410 340,460 Z" 
+          fill="#ffffff" opacity="0.4" filter="blur(2px)"/>
+    <path d="M 420,350 Q 500,380 580,340 Q 520,320 440,330 Z" 
+          fill="#ffffff" opacity="0.45" filter="blur(1px)"/>
+    <path d="M 450,560 Q 520,530 570,580 Q 500,600 450,560 Z" 
+          fill="#ffffff" opacity="0.35"/>
+
+    <!-- Atmospheric Limb Glow -->
+    <circle cx="500" cy="500" r="190" fill="url(#earth-glow)"/>
+    <circle cx="500" cy="500" r="190" fill="none" stroke="#b3e5fc" stroke-width="3" opacity="0.7"/>
+  </g>
+</svg>

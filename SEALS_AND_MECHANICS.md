@@ -5,12 +5,12 @@
 
 | The Prime Engine | The Planetary Seal |
 | :---: | :---: |
-| ![Prime Engine](assets/seal_prime_engine_2026.webp) | ![Planetary Seal](assets/seal_planetary_counter_rotation_2026.webp) |
+| ![Prime Engine](assets/seal_prime_engine_2026.svg) | ![Planetary Seal](assets/seal_planetary_counter_rotation_2026.svg) |
 | *Operational Standard: Torque Governor* | *Great Seal: Counter-Rotating Sovereignty* |
 
 | The Law of One | The Compassion Side |
 | :---: | :---: |
-| ![The Law of One](assets/seal_law_of_one_honesty_2026.webp) | ![The Compassion Side](assets/seal_compassion_side_2026.webp) |
+| ![The Law of One](assets/seal_law_of_one_honesty_2026.svg) | ![The Compassion Side](assets/seal_compassion_side_2026.svg) |
 | *The Hearth Axiom: Honesty* | *The Horizon Axiom: Compassion* |
 
 ---
